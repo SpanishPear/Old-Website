@@ -1,0 +1,63 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+
+div > *  {
+	display: inline-block;
+}
+ul > * {
+	display: inline-block;
+}
+.quote{
+	height: 55px;
+}
+.nav{
+	position:fixed;
+	height: 110px;
+	background-color: white;
+	width: 100%;
+	top:0;
+}
+div.banner{
+	background: url('../images/BannerMedium.jpg') no-repeat;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:0; 
+	padding-top: 50.27%; 
+	margin: 100px auto 0;
+}
+div.about{
+	background: url('../images/Banner.png') no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+div.blog-excerpt{ 
+	background:url('../images/HoldingWoodStormCo\ copy.jpg') no-repeat green;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+blockquote{
+	background-color: white;
+	width: 20%;
+	margin-top: 5%;
+	padding: 2%;
+	position: block;
+	float: right;
+	margin-right: 10%;
+	border-radius: 3px;
+}
+div{
+	height: 70%;
+}
+.nav > i{
+	float: right;
+	margin-right: 1.75%;
+	margin-top: 2%;
+}
+.logo{
+	width: 25%;
+	margin-top: 0.6%;
+	margin-left: 0.6%;
+}
+
+
