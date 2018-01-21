@@ -1,14 +1,14 @@
-html, body { height: 100%; width: 100%; margin: 0; }
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
+html, body { height: 100%; width: 100%; margin: 0; }
 div > *  {
 	display: inline-block;
 }
-ul > * {
-	display: inline-block;
+
+div{
+	height: 70%;
 }
-.quote{
-	height: 55px;
-}
+/*  HEADER STYLING */
 .nav{
 	position:fixed;
 	height: 110px;
@@ -16,22 +16,132 @@ ul > * {
 	width: 100%;
 	top:0;
 }
+/* FIX THE BLOODY MENU BECAUSE IT DOESNT WORK WHEN RESIZEDx*/
+.menu>ul>li{
+	display:inline-block;
+	text-align: center;
+}
+.menu ul li a:hover{
+	border: 3px solid black;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	margin-right: 50%;
+	border: 3px solid #FFFFFF;
+}
+.menu{
+	position: fixed;
+	display: inline-block;
+	margin-top: 1%;
+	margin-left: 10%;
+	margin-bottom: 8%;
+}
+
+.nav > i{
+	float: right;
+	margin-right: 1.75%;
+	margin-top: 2%;
+}
+.logo{
+	width: 25%;
+	margin-top: 0.6%;
+	margin-left: 0.6%;
+}
+.fa-2x{
+	border: 3px solid #FFFFFF;
+	padding: 3px;
+}
+.fa-2x:hover{
+	border: 3px solid black;
+
+}
+
+
+
+
+
+
+/*BANNER STYLING*/
+
+
+
+
+
 div.banner{
 	background: url('../images/BannerMedium.jpg') no-repeat;
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
 	height:0; 
-	padding-top: 50.27%; 
+	padding-top: 50.27%; /*height/width %*/
 	margin: 100px auto 0;
 }
+
+/* ABOUT STYLING*/
 div.about{
-	background: url('../images/Banner.png') no-repeat;
-	background-position: center;
-	background-size: contain;
+	background: url('../images/SmallerAboutBanner.png ') no-repeat;
+	background-position: left;
+	background-size: cover;
+	height:70%;
 }
+
+.about-inner >*{
+	display:block;
+}
+.about-inner{
+	margin-left: 65%
+}
+.about-inner>p{
+	width: 140%;
+	margin-left: -90%;
+	margin-bottom: 20%;
+	text-align:center;
+	font-size: 2vw;
+	line-height: 150%;
+
+}
+.about-buttons{
+	width: 23%;
+	padding: 3%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	
+}
+.about-inner> h3{
+	color:white;
+	background-color: black;
+	margin-top: 20%;
+	margin-left: -37%;
+
+}
+.about-inner>a{
+	z-index:0;
+	text-decoration: none;
+	text-align:center;
+	margin-left: -36%;
+	margin-top: -15%;
+	padding:3%;
+	color:black;
+	background-color:white;
+	border: 5px solid black;
+	font-weight: normal;
+	display:block;
+	transition:all 500ms ease;
+}
+.about-inner>a:hover{
+	z-index:1;
+	background-color: black;
+	color:white;
+	cursor:hand;
+}
+
+
+/*EXERPT STYLING*/
 div.blog-excerpt{ 
-	background:url('../images/HoldingWoodStormCo\ copy.jpg') no-repeat green;
+	background:url('../images/HoldingWoodStormCo\ copy.jpg') no-repeat;
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,18 +156,43 @@ blockquote{
 	margin-right: 10%;
 	border-radius: 3px;
 }
-div{
-	height: 70%;
+.quote{
+	height: 55px;
 }
-.nav > i{
-	float: right;
-	margin-right: 1.75%;
-	margin-top: 2%;
+.after{
+	width: 70%;
+	height:4px;
+	display: inline-block;
+	background: black;
+	margin-left: 0;
+	margin-bottom:5%;
 }
-.logo{
-	width: 25%;
-	margin-top: 0.6%;
-	margin-left: 0.6%;
+blockquote>div>p{
+	font-size:1.5vw;
+}
+/*FOOTER STYLING*/
+.footer>*{
+	display:block;
+}
+.footer-icons>.fa{
+	display:inline-block;
+	padding:3%;
+	margin-left: 5%;
+}
+.footer-icons{
+	margin-left: 20%
+}
+footer{
+	width: 100%;
+}
+footer>ul>li{
+	display:inline-block;
+	text-decoration: none;
+	margin-left: 10%;
+	font-family: 'Lato', sans-serif;
+}
+footer>ul{
+	margin:0 auto;
 }
 
 
