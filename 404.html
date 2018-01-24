@@ -2,26 +2,66 @@
 permalink: /404.html
 ---
 
-<!DOCTYPE HTML>
-<head>
-	<style>
-		body{
-			background-color: #0883BE;
-		}
-		img{
-			margin-left: 25%;
-			width: 50%;
-			margin-right: 25%;
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background-color: #0883BE;
+			}
+			img{
+				margin-left: 25%;
+				width: 50%;
+				margin-right: 25%;
 
-		}
-		.emoji {
-			position: fixed;
-			transition: transform 10s;
-		}
-	</style>
-</head>
-<body>
-  <h1 style="text-align: center;"> THIS IS THE 404</h1>
-  <img src = "assets/images/Moana.jpg"> 
-  <script src="assets/js/faces.js"></script>
-</body>
+			}
+			.emoji {
+				position: fixed;
+				transition: transform 10s;
+				width: 10%;
+				height:10%;
+			}
+		</style>
+		<script type="text/javascript">
+			var possibleImages = [
+				"assets/images/Moana.jpg",
+				"assets/images/GuitarPlaying.png",
+				"assets/images/Cheese.jpg",
+				"assets/images/CryptoPhoto.jpg",
+				"assets/images/LogoSmall.png",
+				"assets/images/Group5.jpg"
+				];
+			function move() {
+				console.log(possibleImages);
+
+			    if (Math.random() < 0.8) {
+			        return;
+			    }
+
+			    const index = Math.round(Math.random() * possibleImages.length);
+			    const image = possibleImages[index];
+			    console.log(image)
+
+			    const el = document.createElement("img");
+			    document.body.appendChild(el);
+
+			    el.classList.add('emoji');
+			    el.src = image
+			    el.offsetLeft;  // forces layout
+
+			    el.style.left = event.clientX + 'px';
+			    el.style.top = event.clientY + 'px';
+			    el.style.transform = 'translate(' + (Math.random() * -1000 + 500) + 'px, 1200px) scale(0)';
+
+			    el.addEventListener('transitionend', () => {
+			        el.remove()
+			    })
+			}
+		</script>
+	</head>
+	<body onmousemove="move()">
+	  <h1 style="text-align: center;"> THIS IS THE 404</h1>
+	  <img src = "assets/images/Moana.jpg"> 
+	  <script src="assets/js/faces.js"></script>
+	</body>
+</html>

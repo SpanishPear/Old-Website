@@ -7,8 +7,10 @@ var possibleEmoji = [
      "🎸",
 
 ];
+console.log("the script is running!!")
 
 document.body.addEventListener("pointermove", (event) => {
+    console.log("The event has been called")
     if (Math.random() < 0.8) {
         return;
     }
