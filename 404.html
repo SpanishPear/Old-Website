@@ -31,10 +31,9 @@ permalink: /404.html
 				"assets/images/LogoSmall.png",
 				"assets/images/Group5.jpg"
 				];
-			var el = document.getElementsByName("body")
-			if (el){
-				console.log("tTRUE")
-				el.addEventListener("mousemove", function(ev) {
+
+				document.body.addEventListener("mousemove", function(ev) {
+						console.log(ev.screenX);
 						if (Math.random() < 0.85) {
 								return;
 						}
@@ -59,8 +58,6 @@ permalink: /404.html
 						})
 
 				}, true);
-			}
-
 
 		</script>
 	</head>
