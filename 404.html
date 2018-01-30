@@ -34,7 +34,7 @@ permalink: /404.html
 			function move() {
 				console.log(possibleImages);
 
-			    if (Math.random() < 0.8) {
+			    if (Math.random() < 0.85) {
 			        return;
 			    }
 
@@ -49,8 +49,8 @@ permalink: /404.html
 			    el.src = image
 			    el.offsetLeft;  // forces layout
 
-			    el.style.left = event.clientX + 'px';
-			    el.style.top = event.clientY + 'px';
+			    el.style.left = (event.clientX/2) + 'px';
+			    el.style.top = (event.clientY/2) + 'px';
 			    el.style.transform = 'translate(' + (Math.random() * -1000 + 500) + 'px, 1200px) scale(0)';
 
 			    el.addEventListener('transitionend', () => {
@@ -61,7 +61,7 @@ permalink: /404.html
 	</head>
 	<body onmousemove="move()">
 	  <h1 style="text-align: center;"> THIS IS THE 404</h1>
-	  <img src = "assets/images/Moana.jpg"> 
+	  <img src = "assets/images/Moana.jpg">
 	  <script src="assets/js/faces.js"></script>
 	</body>
 </html>
