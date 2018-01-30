@@ -18,7 +18,7 @@ div{
 }
 
 .emoji {
-	 position: fixed;
+	 position: absolute;
 	 transition: transform 10s;
 }
 
@@ -81,7 +81,7 @@ div.banner{
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
-	height:0; 
+	height:0;
 	padding-top: 50.27%; /*height/width %*/
 	margin: 100px auto 0;
 }
@@ -114,7 +114,7 @@ div.about{
 	padding: 3%;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
-	
+
 }
 .about-inner> h3{
 	color:white;
@@ -148,7 +148,7 @@ div.about{
 
 
 /*EXERPT STYLING*/
-div.blog-excerpt{ 
+div.blog-excerpt{
 	background:url('../images/HoldingWoodStormCo\ copy.jpg') no-repeat;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -202,5 +202,3 @@ footer>ul>li{
 footer>ul{
 	margin:0 auto;
 }
-
-
