@@ -1,11 +1,10 @@
-document.onload = function(){
-  var possibleImages = [
-    "assets/images/Moana.jpg",
-    "assets/images/GuitarPlaying.png",
-    "assets/images/Cheese.jpg",
-    "assets/images/CryptoPhoto.jpg",
-    "assets/images/LogoSmall.png",
-    "assets/images/Group5.jpg"
+var possibleImages = [
+  "assets/images/Moana.jpg",
+  "assets/images/GuitarPlaying.png",
+  "assets/images/Cheese.jpg",
+  "assets/images/CryptoPhoto.jpg",
+  "assets/images/LogoSmall.png",
+  "assets/images/Group5.jpg"
   ];
 
   document.body.addEventListener("mousemove", function(ev) {
@@ -33,4 +32,3 @@ document.onload = function(){
       })
 
   }, true);
-}
