@@ -31,8 +31,9 @@ permalink: /404.html
 				"assets/images/LogoSmall.png",
 				"assets/images/Group5.jpg"
 				];
-
-				document.body.addEventListener("mousemove", function(ev) {
+			var el = document.getElementByName("body")
+			if el(){
+				el.addEventListener("mousemove", function(ev) {
 						if (Math.random() < 0.85) {
 								return;
 						}
@@ -57,6 +58,8 @@ permalink: /404.html
 						})
 
 				}, true);
+			}
+
 
 		</script>
 	</head>
